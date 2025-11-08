@@ -1,0 +1,212 @@
+/* 🎨 Palet Warna */
+:root {
+  --bg: #fffbf060;
+  --primary: #EBA4A5;
+  --secondary: #496fa56d;
+  --accent: #2E476B;
+  --dark: #052f69;
+  --text: #000000;
+  --blue: #2E476B;
+  --white: #FFFFFF;
+
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background-color: var(--blue);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 100px 10%;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-img img {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+}
+
+/* CTA Button */
+.cta-btn {
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: var(--dark);
+  transform: translateY(-5px);
+
+}
+
+/* Section */
+section {
+  padding: 70px 10%;
+  text-align: center;
+  background: var(--secondary);
+}
+
+section h2 {
+  color: var(--text);
+  margin-bottom: 15px;
+}
+
+.section-sub {
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+/* Service & Fitur */
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.service-box {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 280px;
+  transition: transform 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimoni / Kursus */
+.testimoni {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.testi-box {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 260px;
+}
+
+.testi-box:hover {
+  transform: translateY(-5px);
+}
+/* Tentang */
+.about {
+  max-width: 800px;
+  margin: auto;
+  text-align: justify;
+}
+
+/* Form Kontak */
+.contact-form {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: var(--dark);
+}
+
+/* Footer */
+footer {
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
